@@ -1,5 +1,7 @@
 package conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,33 @@ package conditions_loops.labs;
  */
 
 public class Exercise_05 {
+
+    public static void main(String[] args){
+
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.println("Enter a high number and then a low number. I will sum all of the numbers in between, and give an average of the two numbers.");
+        // assign input to variable as int
+        System.out.println("High: ");
+        int high = scanner.nextInt();
+        System.out.println("Low: ");
+        int low = scanner.nextInt();
+
+        int start;
+        int sum = 0;
+        float avg = high+low;
+
+        avg = avg/2;
+
+        for (start = low; start <= high; start = start + 1){
+            sum = start + sum;
+        }
+
+        System.out.println("The sum is " + sum);
+        System.out.println("The average is " + avg);
+
+
+
+    }
 }

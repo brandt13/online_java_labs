@@ -2,21 +2,120 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+
+        cd Documents/CodingNomads
+
      2. Create new folder Terminal_testing
+
+        mkdir Terminal_testing
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+
+            touch file1.txt
+            touch file2.txt
+            touch file3.txt
+            MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+            file1.txt	file2.txt	file3.txt
+
          b. print the directory path
+
+            pwd
+            /Users/brandtleeds/Documents/CodingNomads/Terminal_testing
+
          c. list the contents of the folder
+
+            MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+            file1.txt	file2.txt	file3.txt
+
      5. Inside of folder Terminal_testing, create a new folder
+
+     MacBook-Pro-2:Terminal_testing brandtleeds$ mkdir newFolder
+     MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+     file1.txt	file2.txt	file3.txt	newFolder
+
      6. Copy a file from Terminal_testing to the new folder
+
+     MacBook-Pro-2:Terminal_testing brandtleeds$ cp file1.txt newFolder
+     MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+     file1.txt	file2.txt	file3.txt	newFolder
+     MacBook-Pro-2:Terminal_testing brandtleeds$ cd newFolder
+     MacBook-Pro-2:newFolder brandtleeds$ ls
+     file1.txt
+
      7. Move a different file from Terminal testing to the new folder
+
+     MacBook-Pro-2:Terminal_testing brandtleeds$ mv file2.txt newFolder
+     MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+     file1.txt	file3.txt	newFolder
+     MacBook-Pro-2:Terminal_testing brandtleeds$ cd newFolder
+     MacBook-Pro-2:newFolder brandtleeds$ ls
+     file1.txt	file2.txt
+
+
      8. Demonstrate removing:
          a. A file
+
+         MacBook-Pro-2:newFolder brandtleeds$ rm -r file1.txt
+         MacBook-Pro-2:newFolder brandtleeds$ ls
+         file2.txt
+
          b. A folder
+
+         MacBook-Pro-2:newFolder brandtleeds$ cd ..
+         MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+         file1.txt	file3.txt	newFolder
+         MacBook-Pro-2:Terminal_testing brandtleeds$ rm -f newFolder
+         rm: newFolder: is a directory
+         MacBook-Pro-2:Terminal_testing brandtleeds$ rm -r newFolder
+         MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+         file1.txt	file3.txt
+
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+
+         MacBook-Pro-2:Terminal_testing brandtleeds$ touch veggies.txt
+         MacBook-Pro-2:Terminal_testing brandtleeds$ ls
+         file1.txt	file3.txt	veggies.txt
+         MacBook-Pro-2:Terminal_testing brandtleeds$ vim veggies.txt
+
+         carrot
+         onion
+         bellpepper
+         jalapeno
+         leek
+         cilantro
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         ~
+         "veggies.txt" 6L, 47C
+         :wq
+
+
          b. Use $ cat print contents of file
+
+         MacBook-Pro-2:Terminal_testing brandtleeds$ cat veggies.txt
+         carrot
+         onion
+         bellpepper
+         jalapeno
+         leek
+         cilantro
+
+
          c. Use $ grep to search for a word inside file
+
+         MacBook-Pro-2:Terminal_testing brandtleeds$ grep carrot veggies.txt
+         carrot
 
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd

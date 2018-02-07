@@ -16,7 +16,16 @@ public class Exercise_01 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int hey = 42;
+        double teacher = 4.2;
+        float leaveThoseKids = 7.8f;
+        char alone = 'h';
+
+        System.out.println(hey);
+        System.out.println(teacher);
+        System.out.println(leaveThoseKids);
+        System.out.println(alone);
+
 
     }
 }

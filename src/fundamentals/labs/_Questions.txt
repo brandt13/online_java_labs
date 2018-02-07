@@ -1,37 +1,61 @@
 Answer the following questions:
 
 1.) Using the command line, how do you:
-    a. change directories?
-    b. list the contents of a folder?
-    c. print the path of the current directory?
-    d. move a file from one location to the another?
-    e. copy a file from one location to another?
-    f. create a file?
-    g. create a folder?
-    h. delete a file?
-    i. delete a folder?
-    j. print the contents of a file?
-    k. edit the contents of a file?
+    a. change directories?                                  cd
+    b. list the contents of a folder?                       ls
+    c. print the path of the current directory?             pwd
+    d. move a file from one location to the another?        mv <filename> <sub-directory>/<filename>
+    e. copy a file from one location to another?            cp <filename> <directory>
+    f. create a file?                                       touch <filename>
+    g. create a folder?                                     mkdir <directory-name>
+    h. delete a file?                                       rm <filename>
+    i. delete a folder?                                     rm -r <directory-name>
+    j. print the contents of a file?                        cat <file>
+    k. edit the contents of a file?                         use vim or nano
 
 2.) Why do we use git and Github?
 
+    We use git and GitHub so that multiple developers can work towards the same goal when coding without overwriting
+    another's code.
+
 3.) What is the general flow of git?
+
+    Master < release branches < develop branches < feature branches
 
 4.) What is the purpose of adding a remote to a local git repository?
 
+    Adding a remote to a local repository syncs allows one to collaborate with others on projects
+
 5.) How do you print a message to the console?
+
+    System.out.print("Message");
 
 6.) Where does a program begin its execution?
 
+    the main method
+
 7.) What is a code block and how do you create one?
+
+    A code block is a chunk of code, you create one in Java by adding curly braces after calling a class or method
 
 8.) What is the idea of variable scope?
 
+    It is the idea that variables are either globally, as in available for an entire class of code, or locally, where a
+    variable is only confined to a specific method
+
 9.) What are semicolons used for?
+
+    ending a line of code
 
 10.) What are lines of code indented? When should a line be indented?
 
+    When a block of code is inside a bigger block of code, that code needs to be indented. It makes blocks of code more
+    understandable
+
 11.) What does a .java file need to be complied to a .class file before running?
+
+    The Java Virtual Machine only runs bytecode. The programs we write are converted to bytecode when they are compiled,
+    so that they can be run by the JVM.
 
 
 

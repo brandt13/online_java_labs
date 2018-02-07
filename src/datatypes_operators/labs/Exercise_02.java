@@ -23,7 +23,18 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int woop = 10;
+        double yay = woop;
+
+        System.out.println("");
+        System.out.println(yay);
+        System.out.println("");
+
+        double hehe = 10.5;
+        int haha = (int)hehe;
+
+        System.out.println(haha);
+        System.out.println("");
 
     }
 }

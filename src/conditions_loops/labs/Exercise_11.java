@@ -20,4 +20,22 @@ package conditions_loops.labs;
  */
 
 public class Exercise_11 {
+
+    public static void main(String[] args){
+
+        int x, y;
+
+        for (y = 1; y <= 10; y++){
+
+            for (x = 1; x <= 10; x++){
+
+                System.out.print(x*y + "|");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
 }
