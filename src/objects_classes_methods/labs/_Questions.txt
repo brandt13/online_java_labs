@@ -3,15 +3,34 @@ Answer the following questions:
 
 1.) What is an instance variable?
 
+    variables declared outside of methods that are available to all objects within the class. each object gets its own
+    copy of each instance variable if it calls for it
+
 2.) How do you create an object of a class Vehicle?
+
+    Vehicle car = new Vehicle();
+
 
 3.) What is a reference variable? How is it different from a primitive type?
 
+    it is a variable that refers to another class. It is an object and can contain many primitive types
+
+
 4.) What does it mean to pass by reference?
+
+
 
 5.) What makes up a method signature?
 
+    Modifier modifier returnValueType methodName(parameters){}
+
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+
+    public static double divide(int a, int b){
+
+        return ((double) a + b);
+
+    }
 
 7.) When does a method stop executing? How can you make it terminate?
 
