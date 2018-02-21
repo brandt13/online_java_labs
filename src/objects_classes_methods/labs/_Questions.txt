@@ -36,6 +36,8 @@ Answer the following questions:
 
 8.) How do you return a String from a method?
 
+    tell the method that it should return a string, i.e. "public static STRING methodName(string ayyyy){ return ayyyy;" }
+
 9.) What is the return type of a method that does not returns any value?
 
 10.) When should a method be static?
@@ -50,7 +52,9 @@ Answer the following questions:
 
 14.) What are constructors used for?
 
-15.) If a class does not have a constructor, how does Java handle the creation of an object
+15.) If a class does not have a constructor, how does Java handle the creation of an object?
+
+    Java creates a blank constructor for it. k
 
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
 

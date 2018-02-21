@@ -1,5 +1,7 @@
 package datatypes_operators.labs;
 
+import java.util.Scanner;
+
 /**
  * Data Types and Operators Exercise 5: More arrays
  *
@@ -14,7 +16,14 @@ public class Exercise_05{
 
         int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-        // write code here
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter an index number to see its value: ");
+        int i = scanner.nextInt();
+
+
+        System.out.println(array[i-1]);
+
 
 
     }
