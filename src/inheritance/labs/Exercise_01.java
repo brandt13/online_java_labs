@@ -54,8 +54,8 @@ class Candy {
 
         takeFive.eatTakeFive();
 
-//      Bar snickers = new Bar(240, "Snickers");
-//      System.out.println("You're eating a lot of candy. This time you ate a " + candyName + ", which has " + calories + " calories.");
+        Bar snickersCal = new Bar(240, "Snickers");
+        System.out.println("You're eating a lot of candy. This time you ate a " + candyName + ", which has " + calories + " calories.");
 
         String[] snickers = {" nougat", " caramel"," chocolate"," peanuts"};
 

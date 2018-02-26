@@ -20,9 +20,63 @@ package packages_interfaces.labs;
 
 interface ElectricInstruments {
 
+    public boolean turnOnAmp();
+
+    public boolean turnOnReverb();
+
+    public int volume();
+
+}
+
+class Guitar_GibsonLesPaul implements ElectricInstruments {
 
 
+    @Override
+    public boolean turnOnAmp() {
+        return true;
+    }
 
+    @Override
+    public boolean turnOnReverb() {
+        return true;
+    }
+
+    @Override
+    public int volume() {
+        return 9;
+    }
+}
+
+class Bass_FenderJazzmaster implements ElectricInstruments {
+
+
+    @Override
+    public boolean turnOnAmp() {
+        return true;
+    }
+
+    @Override
+    public boolean turnOnReverb() {
+        return false;
+    }
+
+    @Override
+    public int volume() {
+        return 7;
+    }
+}
+
+class VictorWooten_PlayingFenderJazzmaster extends Bass_FenderJazzmaster {
+
+    @Override
+    public boolean turnOnReverb() {
+        return true;
+    }
+
+    @Override
+    public int volume() {
+        return 11;
+    }
 }
 
 

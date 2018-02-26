@@ -1,5 +1,9 @@
 package packages_interfaces.labs;
 
+import packages_interfaces.labs.FromAmazon.AmazonBox;
+import packages_interfaces.labs.FromFedEx.FedExBox;
+
+
 /**
  * Packages Exercise 1: Protected modifier
  *
@@ -9,3 +13,23 @@ package packages_interfaces.labs;
  *      4) Demonstrate how the the protected access modifier restricts access from package to package
  *
  */
+
+
+class Packages {
+
+    public static void main(String[] args) {
+
+        AmazonBox ab = new AmazonBox();
+
+        ab.OpenAmazonBox();
+//      ab.LookInAmazonBox();       --- LookInAmazonBox() is protected
+
+        FedExBox feb = new FedExBox();
+
+        feb.OpenFedExBox();
+//      feb.LookInFedExBox();       --- LookInFedExBox() is protected
+    }
+
+
+
+}
