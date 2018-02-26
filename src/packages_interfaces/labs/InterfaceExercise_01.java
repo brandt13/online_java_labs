@@ -18,3 +18,11 @@ package packages_interfaces.labs;
  */
 
 
+interface ElectricInstruments {
+
+
+
+
+}
+
+

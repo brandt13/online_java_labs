@@ -18,13 +18,16 @@ public class Exercise_05{
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter an index number to see its value: ");
-        int i = scanner.nextInt();
+        int i;
 
+        do {
 
-        System.out.println(array[i-1]);
+            System.out.println("Enter a between 1 and 10 to see its index number in an array: ");
+            i = scanner.nextInt();
 
+        } while (i < 1 || i > 10);
 
+        System.out.println(array[i - 1]);
 
     }
 }

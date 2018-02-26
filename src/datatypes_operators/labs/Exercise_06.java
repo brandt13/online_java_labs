@@ -31,7 +31,7 @@ public class Exercise_06 {
 
                 System.out.print(twoDArray[x][y] + " | ");
 
-            }
+            }                                                       // [0] : [0][1][2][3][4]
 
             System.out.println();
         }
