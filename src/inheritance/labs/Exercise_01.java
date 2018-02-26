@@ -46,20 +46,29 @@ class Candy {
 
         System.out.println();
 
+        Candy crunchBar = new Candy(120, "Crunch Bar");                         // Using constructor Candy, we
+        System.out.println("Calories in a " + candyName + ": " + calories);     // create and initialize a Crunch Bar Object.
+                                                                                // We print the calories and candy name.
 
-        Candy crunch = new Candy(120, "Crunch");
-        System.out.println("Calories in a " + candyName + ": " + calories);
+        Bar eatIt = new Bar();                                                  // (7) This eatIt object takes in any candy bar and lets
+        eatIt.eatCandyBar("Symphony Bar",150);                                  // you eatIt. eatCandyBar method is overloaded, and
+                                                                                // lets you put in the name of the bar by itself, or
+                                                                                // the name of the bar + the calorie amount.
 
-        Bar takeFive = new Bar();
+        Bar takeFive = new Bar();                                           // (5) We create a new "Candy-Bar" object called takeFive
+        takeFive.eatTakeFive();                                             // Inside the eatTakeFive method, we create a new
+                                                                            // Candy object, takeFive, giving it a name and
+                                                                            // calories. We then 'eat' the Take Five, and the
+                                                                            // print out shows us that we did.
 
-        takeFive.eatTakeFive();
+        Bar snickersCal = new Bar(240, "Snickers Bar");                     // (6) We create a Snickers Bar, giving it a name and
+        System.out.println("You're eating a lot of candy. You ate a "       // calories. This is using the overloaded constructor
+                + candyName + ", which has " + calories + " calories.");    // "Bar"
 
-        Bar snickersCal = new Bar(240, "Snickers");
-        System.out.println("You're eating a lot of candy. This time you ate a " + candyName + ", which has " + calories + " calories.");
+        String[] snickers = {" nougat", " caramel"," chocolate"," peanuts"};    // An attempt at using an array to print out the
+                                                                                // ingredients in a snickers bar through line 77
 
-        String[] snickers = {" nougat", " caramel"," chocolate"," peanuts"};
-
-
+        System.out.println();
         System.out.print("Snickers ingredients: ");
         for (int i = 0; i < 4; i++)
             System.out.print(snickers[i]);
@@ -67,8 +76,8 @@ class Candy {
         System.out.println();
         System.out.println();
 
-        System.out.print("Enter the ingredients in a Mr. Goodbar: ");
-        String[] mrgoodbar = {scanner.next(), scanner.next(), scanner.next()};
+        System.out.print("Enter the ingredients in a Mr. Goodbar: ");           // Takes in and prints 3 ingredients in a Mr. Goodbar
+        String[] mrgoodbar = {scanner.next(), scanner.next(), scanner.next()};  // through line 87
 
         System.out.println();
         System.out.print("Mr. Goodbar ingredients: ");
@@ -91,10 +100,20 @@ class Bar extends Candy {
     private int barContentsVar;
     private String[] barContents = new String[barContentsVar];
 
-    public void eatTwix() {
-        setBarName("Twix");
+    public void eatCandyBar(String candyBar) {
+
+        this.barName = candyBar;
         System.out.println("Mmm! You ate a " + barName + "! It was good. :)");
     }
+
+    public void eatCandyBar(String candyBar, int calories){
+
+        this.barName = candyBar;
+        this.calsPerBar = calories;
+
+        System.out.println("Mmm! You ate a " + barName + "! It was good. :) It contained " + calsPerBar + " calories.");
+    }
+
 
     public void eatTakeFive() {
 
@@ -145,7 +164,7 @@ class Bar extends Candy {
         return barName;
     }
 
-    public void setBarName(String barName) {
+    public void setBarName() {
         this.barName = barName;
         super.candyName = barName;
     }
@@ -158,10 +177,7 @@ class Bar extends Candy {
         this.barContents = barContents;
         super.contents = barContents;
     }
-
-
-
-
+    
 }
 
 class Bits extends Candy {
